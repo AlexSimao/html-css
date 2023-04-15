@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Midías</title>
+</head>
+<body>
+    <h1>Midías frexíveis</h1>
+    <hr>
+    <h2>Imagens Pequenas, Medias e Grandes</h2>
+    <p>Dependendo do tamanho da tela do seu dispositivo, essa imagem vai mudar.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="midias/imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="midias/imagens/foto-m.png" type="image/png">
+        <img src="midias/imagens/foto-g.png" alt="imagem-flexivel">
+    </picture>
+    <p><a href="pg002.html" rel="next"><strong>Teste:</strong> pg002</a></p>
+    <p><strong><a href="arvore.html" rel="next">Arvôres &dArr;</a></strong></p>
+</body>
+</html>

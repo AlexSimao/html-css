@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 30px;
+        }
+
+        .d-main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+
+        }
+        
+        .linkss {
+            display: none;
+            
+        }
+
+        .linkss:hover {
+            display: block;
+        }
+        
+        .d-main:hover {
+            color: brown;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.158);
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .d-page ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Passe o mouse no texto a baixo <br>&darr;</h1>
+    <div class="d-main">
+        LISTA
+        <a class="linkss" href="../ex012b-completo/index.html" rel="dofollow" target="_blank">EX012 &rAarr;</a>
+        <a class="linkss" href="../ex016-completo/cor001.html" rel="dofollow" target="_blank">EX016 &rAarr;</a>
+        
+    </div>
+    <div class="d-page">
+        <ul>
+            <li class="prev-p"><a href="index.html" rel="prev">&lAarr; Index</a></li>
+            <li class="next-p"><a href="links.html" rel="next">Proximo &rarr;</a></li>
+        </ul>
+    </div>
+</body>
+</html>

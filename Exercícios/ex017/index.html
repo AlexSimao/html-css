@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt, pc 
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+
+            Recomendado pelo W3C: px, em
+            px = Pixels / 
+            */
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 0.8em;
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Shorthand é uma junção de varias funçoes em apenas uma.Ex/
+            font: italic bold 0.8em 'Courier New', Courier, monospace;
+
+            A forma aplicada a tag p e o exemplo de shorthand dão o mesmo resultado para a pagina.
+            */
+        }
+        p#nextp {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus alias quibusdam consequuntur. Nam, labore laboriosam laudantium natus id assumenda, quibusdam consequuntur dolorum non accusamus delectus itaque, voluptas temporibus dolore repudiandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque illo autem, eaque quod quasi in ducimus dolorum nesciunt dicta atque ipsum amet! Nihil vel quod, pariatur possimus suscipit ipsa hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laboriosam officia ut sint repellendus modi hic tenetur, assumenda facilis perferendis, deserunt cum iste ab, repellat delectus commodi id error dolore.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur laboriosam blanditiis harum delectus repudiandae ex voluptatem, vel ipsa nam molestias impedit repellat iste explicabo obcaecati modi quasi adipisci. Ipsam, praesentium.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore ipsa eligendi doloribus iusto illo at esse fugiat quam quos similique dolorem, blanditiis atque fugit molestias ducimus. Mollitia, officia dolorum.</p>
+    <p id="nextp"><a href="pg002.html">Pg002 &rarr;</a></p>
+</body>
+</html>

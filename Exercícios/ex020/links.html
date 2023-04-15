@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h2 {
+            padding-top: 30px;
+            outline: rgb(255, 0, 0);
+        }
+
+        ul {
+            padding-top: 30px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bolder;
+        }    
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        .a-main::after {
+            content: "[link]";
+            color: lightgrey;
+        }
+
+        .ul-page {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <section></section>
+    <h1>Personalisando Links</h1>
+    <h2>Alguns canais do Youtube que eu gosto. <br>&darr;</h2>
+    <ul>
+        <li><a class="a-main" href="https://www.youtube.com/@einerdtv" target="_blank">Ei Nerd</a></li>
+        <li><a class="a-main" href="https://www.youtube.com/@CanalMangaQ" target="_blank">Canal MangaQ</a></li>
+        <li><a class="a-main" href="https://www.youtube.com/@MaestriaNosNegocios" target="_blank">Maestria nos Negocios</a></li>
+    </ul>
+    <ul class="ul-page">
+        <li><a href="pg002.html">&larr; Voltar</a></li>
+        <li><a href="index.html">Início &uArr;</a></li>
+    </ul>
+</body>
+</html>

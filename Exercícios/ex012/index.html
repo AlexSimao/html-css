@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse video fica armazenado no meu próprio servidor.</p>
+    <p><a href="pg002.html" rel="next">Cantinho do descanso &uArr; </a></p>
+    
+    <video width="400" controls poster="midias/imagens/planeta-marte-1500.jpg">
+        <source src="midias/videos/marciano-editado.mp4" type="video/mp4">
+        <source src="midias/videos/marciano-editado.mkv" type="video/mkv">
+        <source src="midias/videos/marciano-editado.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo um vídeo externo</h1>
+    <p>Esse video não esta armazenado nesse servidor, ee esta rodando diretamente do servidor do Youtube.</p>
+
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

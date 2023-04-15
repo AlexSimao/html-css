@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de caixas box-level e inline-level</title>
+    <style>
+        * {
+            border: 1px solid red;
+        }
+
+        h1 {
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            outline: 5px solid blue;
+            border-width: 5px;
+            margin: 10px auto;
+        }
+
+        p {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+
+        a {
+            background-color: lightcoral;
+            padding: 5px;
+
+        }
+
+        #next-p {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Mais um box-level. <a href="#">ancoras são caixas inline-level</a></p>
+    <p id="next-p" ><a rel="next" href="caixa02.html">Caixa02 &rarr;</a></p>
+</body>
+</html>
