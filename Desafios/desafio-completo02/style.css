@@ -64,7 +64,7 @@ nav {
 }
 
 nav a {
-    margin: 5px 5px 5px calc(5px + 2%);
+    margin: 5px 5px 5px calc(5px + 1%);
     text-decoration: none;
     padding: 5px;
     border-radius: 3px;
