@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Posicionamentos de Fundos</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: aquamarine;
+            background-image: url(imagens/wallpaper005.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* background: color image position repeat size attachment; */
+
+            /* background: aquamarine url(imagens/wallpaper005.jpg) center no-repeat cover fixed; */
+
+            /* O size nas shorthand não esta funcionando. */
+        }
+        body > h1{
+            background-color: blue;
+            max-width: 500px;
+            margin: 10px auto;
+            text-align: center;
+            border-radius: 0 15px;
+        }
+        header{
+            margin: auto;
+            padding: 10px;
+            background-color: #fff;
+            text-align: center;
+            max-width: 500px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .bloco{
+            background-color: brown;
+            margin: 50px auto;
+            min-width: 320px;
+            max-width: 1000px;
+            height: 100vh;
+            border-radius: 10px;
+            border: 2px solid black;
+            background-position: center;
+            background-image: url(imagens/wallpaper003.jpg);
+        }
+        #q1{
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        #q2{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #q3{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolores tenetur sint perspiciatis impedit ab, mollitia aperiam nisi cum nesciunt repellendus quam odit omnis ut expedita quasi earum sit corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, at facilis, ea, aut non facere nihil sunt deserunt vero dolorem placeat adipisci laborum? Qui, nostrum necessitatibus reiciendis dignissimos repellat culpa.</p>
+    </header>
+    <hr>
+    <h1>Mexa no Tamanho da Tela</h1>
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+</body>
+</html>
