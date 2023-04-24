@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 002</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption, td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        caption{
+            background-color: rgb(83, 83, 83);
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        th{
+            text-align: center;
+            background-color: gray;
+            color: #fff;
+        }
+        .quant{
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+        }
+        tfoot{
+            background-color: gray;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!-- 
+        ANATOMIA DE TABELAS GRANDES
+        TABLE
+        CAPTION
+            THEAD
+                TR
+                    TH
+                    TD
+            TBODY
+                TR
+                    TH
+                    TD
+            TFOOT
+                TR
+                    TH
+                    TD           
+     -->
+     <table>
+        <caption>Lista de Compras.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Produtos</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preços</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chocolate</td>
+                <td class="quant">2</td>
+                <td class="num">R$5,00</td>
+            </tr>
+            <tr>
+                <td>Bala de Goma</td>
+                <td class="quant">4</td>
+                <td class="num">R$3,00</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td class="quant">1</td>
+                <td class="num">R$12,50</td>
+            </tr>
+            <tr>
+                <td>Feijão</td>
+                <td class="quant">2</td>
+                <td class="num">R$6,50</td>
+            </tr>
+            <tr>
+                <td>Macarrão</td>
+                <td class="quant">3</td>
+                <td class="num">R$4,00</td>
+            </tr>
+            <tr>
+                <td>Açucar</td>
+                <td class="quant">2</td>
+                <td class="num">R$5,00</td>
+            </tr>
+            <tr>
+                <td>Café</td>
+                <td class="quant">1</td>
+                <td class="num">R$10,00</td>
+            </tr>
+            <tr>
+                <td>Leite</td>
+                <td class="quant">3</td>
+                <td class="num">R$3,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td class="quant">===</td>
+                <td class="num">R$88,50</td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
