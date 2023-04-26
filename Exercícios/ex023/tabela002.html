@@ -8,10 +8,12 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            height: 300vh;
         }
         table{
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
         caption, td, th{
             border: 1px solid black;
@@ -24,6 +26,8 @@
             font-size: 1.5em;
         }
         thead th{
+            position: sticky;
+            top: -1px;
             text-align: center;
             background-color: darkgray;
             color: #fff;
