@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Sobre Colgroups</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 200vh;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: bisque;
+            padding: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        td, th{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px 15px;
+            width: 150px;
+        }
+        thead{
+            background-color: aquamarine;
+            position: sticky;
+            top: -1px;
+        }
+        .c-nome{
+            background-color: lightgray;
+        }
+        .c-cores{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="c-nome">
+            <col class="c-cores" span="2">
+        </colgroup>
+        <caption>Cores Favoritas</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Nomes</th>                
+                <th scope="colgroup" colspan="2">Cores</th>
+            </tr>
+            <tr>
+                <th scope="col">Cor 1</th>
+                <th scope="col">Cor 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Breno</td>
+                <td>Azul</td>
+                <td>Verde Claro</td>
+            </tr>
+            <tr>
+                <td>Nicolas</td>
+                <td>Laranja</td>
+                <td>Roxo</td>
+            </tr>
+            <tr>
+                <td>Leticia</td>
+                <td>Vermelho</td>
+                <td>Rosa</td>
+            </tr>
+            <tr>
+                <td>Jean</td>
+                <td>Amarelo</td>
+                <td>Laranja</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Cinza</td>
+                <td>Verde Escuro</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>Vermelho</td>
+                <td>Preto</td>
+            </tr>
+            <tr>
+                <td>Livia</td>
+                <td>Preto</td>
+                <td>Laranja</td>
+            </tr>
+            <tr>
+                <td>Daniela</td>
+                <td>Verde</td>
+                <td>Azul Escuro</td>
+            </tr>
+            <tr>
+                <td>Dandara</td>
+                <td>Roxo</td>
+                <td>Preto</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
