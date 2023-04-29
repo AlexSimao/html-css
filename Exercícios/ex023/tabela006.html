@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 2em;
+            background-color: beige;
+            padding: 10px;
+        }
+        td, th{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px 15px;
+        }
+        .tabela{
+            overflow-x: auto;
+        }
+        thead{
+            background-color: grey;
+            color: white;
+        }
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela #6</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates non quod vel aliquam quaerat, sunt aut ipsum rem amet unde fugit ipsam dolore, temporibus, id saepe incidunt dignissimos! Sint.</p>
+    <div class="tabela">
+        <table>
+            <colgroup>
+                <col>
+            </colgroup>
+            <caption>Boletim Escolar do Ano Letivo</caption>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Matérias</th>
+                    <th scope="colgroup" colspan="2">1<sup>o</sup> Bim.</th>
+                    <th scope="colgroup" colspan="2">2<sup>o</sup> Bim.</th>
+                    <th scope="colgroup" colspan="2">3<sup>o</sup> Bim.</th>
+                    <th scope="colgroup" colspan="2">4<sup>o</sup> Bim.</th>
+                </tr>
+                <tr>
+                    <th scope="col">Notas</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Notas</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Notas</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Notas</th>
+                    <th scope="col">Faltas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">L. Portuguesa</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Matematica</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ciencias</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Geofrafia</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
