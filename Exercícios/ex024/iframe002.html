@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            width: 400px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste #1</h1>
+    <p>Muitos sites bloqueiam/recusam a conexão para não serem inceridas em outras paginas atravez dos iframes.</p>
+    
+    <iframe src="https://youtube.com/" frameborder="0"></iframe>
+
+    <hr>
+
+    <h1>Teste #2</h1>
+    <p>Mas isso não acontece em paginas com hospedagem local.</p>
+
+    <iframe src="index.html" frameborder="0"></iframe>
+
+</body>
+</html>
