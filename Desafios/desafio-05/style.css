@@ -35,7 +35,6 @@ main iframe{
     transform: translate(-50%, -50%);
     width: 270px;
     height: 475px;
-    overflow-y: hidden;
 }
 
 div{
@@ -55,6 +54,6 @@ div img{
 div img:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
     border: 1px solid white;
-    transition-duration: .3s;
-    margin: 7px 7px 13px 7px;
+    transition-duration: .5s;
+    transform: translate(-5px, -5px);
 }
