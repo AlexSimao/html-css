@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+img{
+    width: 100%;
+}
+
+.btn-acesse a, .em_breve a{
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.btn-acesse a{
+    height: 100%;
+    background-color: darkred;
+    padding: 25px;
+}
+
+div.btn-acesse a:hover{
+    background-color: red;
+}
+
+div.em_breve a{
+    font-size: 2em;
+    height: 40vh;
+}
