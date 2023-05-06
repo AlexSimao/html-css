@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 
-main#tela{
+main#telefone{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,19 +28,17 @@ main#tela{
     height: 100vh;
 }
 
-main#tela iframe{
+main#telefone iframe{
     position: absolute;
-    top: calc(50% + 4px);
-    left: calc(50% + 1px);
+    top: calc(50% + 3px);
+    left: calc(50% + 0px);
     transform: translate(-50%, -50%);
-    width: 270px;
-    height: 475px;
+    width: 269px;
+    height: 474px;
 }
 
 div#menu-social{
-    display: inline-block;
-    position: absolute;
-    right: 0;
+    text-align: right;
 }
 
 div#menu-social img{
@@ -54,6 +52,6 @@ div#menu-social img{
 div#menu-social img:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
     border: 1px solid white;
-    transition-duration: .5s;
     transform: translate(-5px, -5px);
+    transition-duration: .4s;
 }
