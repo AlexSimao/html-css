@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario</title>
+</head>
+<body>
+    <h1>Formulario #2</h1>
+    <form action="formulario.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuario:</label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="30" autocomplete="username" size="20" placeholder="minimo 5 caracteres">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" autocomplete="new-password" size="10" placeholder="8 caracteres">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
