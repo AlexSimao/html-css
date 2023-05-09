@@ -13,10 +13,13 @@
 </head>
 <body>
     <h1>formulario #1</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-        <p><input id="enviar" type="submit" value="Enviar"></p>
+    <form method="post" action="formulario.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input id="ienviar" type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
