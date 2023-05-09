@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuario</title>
+    <title>Cadastro de Usuario e Média</title>
 </head>
 <body>
     <h1>Formulario #2</h1>
@@ -16,6 +16,26 @@
         <p>
             <label for="isenha">Senha:</label>
             <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" autocomplete="new-password" size="10" placeholder="8 caracteres">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    <h1>Média</h1>
+    <form action="formulario.php">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome Completo" autocomplete="name" minlength="10" maxlength="40">
+        </p>
+        <p>
+            <label for="idata">Data:</label>
+            <input type="month" value="2022-04" required>
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" required value="5" step="0.1" min="0" max="10" placeholder="0 a 10">
         </p>
         <p>
             <input type="submit" value="Enviar">
