@@ -24,18 +24,33 @@
     </form>
     
     <h1>Média</h1>
-    <form action="formulario.php">
+    <form action="formulario.php" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome Completo" autocomplete="name" minlength="10" maxlength="40">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel">
+            </p>
+        </fieldset>
         <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required placeholder="Nome Completo" autocomplete="name" minlength="10" maxlength="40">
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required value="5" step="0.1" min="0" max="10" placeholder="0 a 10">
         </p>
         <p>
             <label for="idata">Data:</label>
-            <input type="month" value="2022-04" required>
+            <input type="month" name="data" id="idata" value="2022-04" required>
         </p>
         <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" required value="5" step="0.1" min="0" max="10" placeholder="0 a 10">
+            <label for="itime">Horário:</label>
+            <input type="time" name="time" id="itime" value="12:00">
         </p>
         <p>
             <input type="submit" value="Enviar">
