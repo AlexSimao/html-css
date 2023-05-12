@@ -39,11 +39,22 @@
                 <label for="itel">Telefone:</label>
                 <input type="tel" name="tel" id="itel" autocomplete="tel">
             </p>
+            <p>
+                <input type="radio" name="sexo" id="imas" value="mas"> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="fem"> <label for="ifem">Feminino</label>
+            </p>
         </fieldset>
-        <p>
-            <label for="imedia">Média:</label>
-            <input type="number" name="media" id="imedia" required value="5" step="0.1" min="0" max="10" placeholder="0 a 10">
-        </p>
+        <fieldset>
+            <h2>Materias:</h2>
+            <p>
+                Português <input type="checkbox" name="pot" id="ipot" checked> <br>
+                Matemática <input type="checkbox" name="mat" id="imat">
+            </p>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" required value="5" step="0.1" min="0" max="10" placeholder="0 a 10">
+            </p>
+        </fieldset>
         <p>
             <label for="idata">Data:</label>
             <input type="month" name="data" id="idata" value="2022-04" required>
