@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basico de programação e Output</title>
+</head>
+<body>
+    <h1>Output</h1>
+    <form action="form.php">
+        <p>
+            <label for="in1">Numero 1:</label>
+            <input type="number" name="n1" id="in1" value="0" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Numero 2:</label>
+            <input type="number" name="n2" id="in2" value="0" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma:</label>
+            <output id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <hr>
+
+    <form action="form.php">
+        <p>
+            <label for="inum">Nivel:</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="isaida.innerHTML = Number(inum.value)">
+            <output id="isaida">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <hr>
+
+    <form action="form.php">
+        <p>
+            <label for="iano">Digete o ano em que voçe nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" placeholder="Ex: 2000" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+</html>
