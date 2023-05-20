@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (max-height: 650px) {
-    
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -31,9 +27,14 @@ header i{
     cursor: pointer;
 }
 
+header i:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
 header > nav{
     display: none;
-    text-align: left;
     margin-top: 10px;
 }
 
@@ -41,7 +42,6 @@ header > nav > ul > li > a{
     display: block;
     background-color: gray;
     padding: 10px;
-    text-align: center;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -53,28 +53,6 @@ header > nav > ul > li > a:hover{
     border: 2px solid darkgrey;
     color: black;
 }
-
-/* header > nav > ul > li{
-    display: inline-block;
-}
-
-header > nav > ul > li > a{
-    background-color: gray;
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
-    margin-left: 5px;
-    border-radius: 4px;
-    text-decoration: none;
-    border: 2px solid gray;
-}
-
-header > nav > ul > li > a:hover{
-    border: 2px solid darkgray;
-    border-bottom: 2px solid black;
-    color: black;
-    background-color: darkgray;
-} */
 
 main{
     padding: 15px;
@@ -95,4 +73,32 @@ main section > p{
     text-align: justify;
     text-indent: 20px;
     line-height: 1.5em;
+}
+
+@media screen and (min-width: 700px) {
+    #itens {
+        display: block;
+    }
+
+    #iconmenu {
+        display: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+    
+    nav ul {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    nav a {
+        border-radius: 7px;
+    }
+
+    nav{
+        background-color: rgb(58, 58, 58);;
+        padding: 5px;
+    }    
 }
