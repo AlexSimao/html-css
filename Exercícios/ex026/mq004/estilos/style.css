@@ -16,17 +16,49 @@ body{
 }
 
 header{
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
     background-color: lightgrey;
 }
 
-header > nav{
-    text-align: left;
+header i{
+    display: block;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    color: white;
     margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
 }
 
-header > nav > a{
+header > nav{
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+header > nav > ul > li > a{
+    display: block;
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid lightgray;
+}
+
+header > nav > ul > li > a:hover{
+    background-color: darkgray;
+    border: 2px solid darkgrey;
+    color: black;
+}
+
+/* header > nav > ul > li{
+    display: inline-block;
+}
+
+header > nav > ul > li > a{
     background-color: gray;
     color: white;
     font-weight: bold;
@@ -37,12 +69,12 @@ header > nav > a{
     border: 2px solid gray;
 }
 
-header > nav > a:hover{
+header > nav > ul > li > a:hover{
     border: 2px solid darkgray;
     border-bottom: 2px solid black;
     color: black;
     background-color: darkgray;
-}
+} */
 
 main{
     padding: 15px;
