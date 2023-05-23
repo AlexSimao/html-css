@@ -9,6 +9,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(89, 42, 133);
+    height: 100vh;
 }
 
 main{
@@ -17,7 +18,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: calc(200px + 15vw);
+    max-width: calc(200px + 15vw);
     min-height: 500px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.350);
@@ -27,18 +28,22 @@ main h1{
     text-align: center;
 }
 
-#sec-img{
+#conteiner{
+    position: relative;
+}
+
+#div-img{
     height: 200px;
     background: black url(../imagens/paisagem.jpg) no-repeat left center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
 
-#sec-main{
+#div-main{
     padding: 10px;
 }
 
-#sec-main p{
+#div-main p{
     margin-top: 10px;
     font-size: .8em;
     font-weight: bold;
